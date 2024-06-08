@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Bites</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico.svg">
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <header>
+        <nav>
+            <div id="sidebar">
+                <a id="closebtn">&times;</a>
+                <div class="sidenav-links">
+                    <div class="nav-item">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <a href="order.html">Order History</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html">Cart</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="index.html">Account</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-container">
+                <i id="openSidebarBtn" class="fa-solid fa-bars fa-xl"></i>
+                <div class="menu-nav-item">
+                    <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick Bites</a>
+                </div>
+                <div class="location-menu-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="index.html">108 University Ave</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="search-nav-item">
+                    <input type="text" placeholder="Type the bite you are want!">
+                    <a href="index.html" id="searchButton">Search</a>
+                </div>
+                <div class="cart-nav-item">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="menu-categories">
+            <div class="menu-category-item">
+                <img src="images/Grocery.png" alt="">
+                <p>Grocery</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/FastFood.png" alt="">
+                <p>Fast Food</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/Pizza.png" alt="">
+                <p>Pizza</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/Indian.png" alt="">
+                <p>Indian</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/Burgers.png" alt="">
+                <p>Burgers</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/Dessert.png" alt="">
+                <p>Dessert</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/IceCream.png" alt="">
+                <p>Ice Cream</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/Sandwich.png" alt="">
+                <p>Sandwich</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/BubbleTea.png" alt="">
+                <p>Bubble Tea</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/BBQ.png" alt="">
+                <p>BBQ</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/Chinese.png" alt="">
+                <p>Chinese</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/Mexican.png" alt="">
+                <p>Mexican</p>
+            </div>
+            <div class="menu-category-item">
+                <img src="images/StreetFood.png" alt="">
+                <p>Street Food</p>
+            </div>
+        </div>
+        <div class="filter-options-container">
+            <div class="filter-option">
+                <i class="fa-solid fa-tag"></i>
+                <p>Offers</p>
+            </div>
+            <div class="filter-option">
+                <i class="fa-solid fa-star"></i>
+                <p>Rating</p>
+            </div>
+            <div class="filter-option">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p>Price</p>
+            </div>
+            <div class="filter-option">
+                <i class="fa-regular fa-clock"></i>
+                <p>Time</p>
+            </div>
+            <div class="filter-option">
+                <i class="fa-solid fa-tag"></i>
+                <p>Sort</p>
+            </div>
+        </div>
+        <div class="promotional-offers-section">
+            <div class="all-banner">
+                <h1>Promotions Offers</h1>
+            </div>
+            <div class="promotional-offers-container">
+                <div class="promotional-offer">
+                    <div class="promotion-text">
+                        <p>Get 25% off Everyday Essentials: eggs, bread, bananas & more</p>
+                        <div class="promo-button">
+                            <a href="index.html">Try Now</a>
+                        </div>
+                    </div>
+                    <img src="images/promo-3.avif" alt="">
+                </div>
+                <div class="promotional-offer" style="background-color: #97BE5A">
+                    <div class="promotion-text">
+                        <p>$0 delivery fees, reduced service fees</p>
+                        <div class="promo-button">
+                            <a href="index.html">Try Now</a>
+                        </div>
+                    </div>
+                    <img src="images/promo-2.avif" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="features-restuarents-section">
+            <div class="all-banner">
+                <h1>Featured Restuarents</h1>
+            </div>
+            <div class="features-restuarents-container">
+                <div class="link-features">
+                    <a href="restuarent.html">
+                        <div class="link-features-restuarent">
+                            <img src="images/feature-1.avif" alt="">
+                            <div class="features-restuarent-name">
+                                <p class="features-restuarent-tile">Wendy's</p>
+                                <i class="fa-regular fa-heart fa-lg" style="color:red;"></i>
+                                <div class="features-restuarent-icons">
+                                    <div class="rating-flex">
+                                        <p>4.3</p>
+                                        <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="features-restuarent-delivery-details">
+                                <p>10-20 Mins Delivery Fee</p>
+                                <p class="align-end">$2.99 Delivery Fee</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="link-features">
+                    <a href="index.html">
+                        <div class="link-features-restuarent">
+                            <img src="images/feature-2.avif" alt="">
+                            <div class="features-restuarent-name">
+                                <p class="features-restuarent-tile">Nova Era Bakery</p>
+                                <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
+                                <div class="features-restuarent-icons">
+                                    <div class="rating-flex">
+                                        <p>4.4</p>
+                                        <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="features-restuarent-delivery-details">
+                                <p>05-15 Mins</p>
+                                <p class="align-end">$2.99 Delivery Fee</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="link-features">
+                    <a href="index.html">
+                        <div class="link-features-restuarent">
+                            <img src="images/feature-3.avif" alt="">
+                            <div class="features-restuarent-name">
+                                <p class="features-restuarent-tile">Subway</p>
+                                <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
+                                <div class="features-restuarent-icons">
+                                    <div class="rating-flex">
+                                        <p>4.1</p>
+                                        <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="features-restuarent-delivery-details">
+                                <p>05-10 Mins</p>
+                                <p class="align-end">$0.99 Delivery Fee</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="features-restuarent">
+                    <img src="images/feature-1.avif" alt="">
+                    <div class="features-restuarent-name">
+                        <p class="features-restuarent-tile">Wendy's</p>
+                        <i class="fa-regular fa-heart fa-lg" style="color:red;"></i>
+                        <div class="features-restuarent-icons">
+                            <div class="rating-flex">
+                                <p>4.3</p>
+                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-restuarent-delivery-details">
+                        <p>10-20 Mins</p>
+                        <p class="align-end">$2.99 Delivery Fee</p>
+                    </div>
+                </div>
+                <div class="features-restuarent">
+                    <img src="images/feature-2.avif" alt="">
+                    <div class="features-restuarent-name">
+                        <p class="features-restuarent-tile">Nova Era Bakery</p>
+                        <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
+                        <div class="features-restuarent-icons">
+                            <div class="rating-flex">
+                                <p>4.4</p>
+                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-restuarent-delivery-details">
+                        <p>05-15 Mins</p>
+                        <p class="align-end">$2.99 Delivery Fee</p>
+                    </div>
+                </div>
+                <div class="features-restuarent">
+                    <img src="images/feature-3.avif" alt="">
+                    <div class="features-restuarent-name">
+                        <p class="features-restuarent-tile">Subway</p>
+                        <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
+                        <div class="features-restuarent-icons">
+                            <div class="rating-flex">
+                                <p>4.1</p>
+                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-restuarent-delivery-details">
+                        <p>05-10 Mins</p>
+                        <p class="align-end">$0.99 Delivery Fee</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="all-restuarents-section">
+            <div class="all-banner">
+                <h1>All Restuarents</h1>
+            </div>
+            <div class="all-restuarents-container">
+                <div class="all-restuarent">
+                    <img src="images/chopped-leaf.avif" alt="">
+                    <div class="all-restuarent-name">
+                        <p class="all-restuarent-tile">Chopped Leaf</p>
+                        <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
+                        <div class="all-restuarent-icons">
+                            <div class="rating-flex">
+                                <p>4.3</p>
+                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-restuarent-delivery-details">
+                        <p>10-20 Mins</p>
+                        <p class="align-end">$2.99 Delivery Fee</p>
+                    </div>
+                </div>
+                <div class="all-restuarent">
+                    <img src="images/booster-juice.avif" alt="">
+                    <div class="all-restuarent-name">
+                        <p class="all-restuarent-tile">Booster Juice</p>
+                        <i class="fa-regular fa-heart fa-lg" style="color:red;"></i>
+                        <div class="all-restuarent-icons">
+                            <div class="rating-flex">
+                                <p>4.3</p>
+                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-restuarent-delivery-details">
+                        <p>10-20 Mins</p>
+                        <p class="align-end">$2.99 Delivery Fee</p>
+                    </div>
+                </div>
+                <div class="all-restuarent">
+                    <img src="images/tasty-shawarma.avif" alt="">
+                    <div class="all-restuarent-name">
+                        <p class="all-restuarent-tile">Tasty Shawarma</p>
+                        <i class="fa-regular fa-heart fa-lg" style="color:red;"></i>
+                        <div class="all-restuarent-icons">
+                            <div class="rating-flex">
+                                <p>4.3</p>
+                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-restuarent-delivery-details">
+                        <p>10-20 Mins</p>
+                        <p class="align-end">$2.99 Delivery Fee</p>
+                    </div>
+                </div>
+                <div class="all-restuarent">
+                    <img src="images/chopped-leaf.avif" alt="">
+                    <div class="all-restuarent-name">
+                        <p class="all-restuarent-tile">Chopped Leaf</p>
+                        <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
+                        <div class="all-restuarent-icons">
+                            <div class="rating-flex">
+                                <p>4.3</p>
+                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-restuarent-delivery-details">
+                        <p>10-20 Mins</p>
+                        <p class="align-end">$2.99 Delivery Fee</p>
+                    </div>
+                </div>
+                <div class="all-restuarent">
+                    <img src="images/booster-juice.avif" alt="">
+                    <div class="all-restuarent-name">
+                        <p class="all-restuarent-tile">Booster Juice</p>
+                        <i class="fa-regular fa-heart fa-lg" style="color:red;"></i>
+                        <div class="all-restuarent-icons">
+                            <div class="rating-flex">
+                                <p>4.3</p>
+                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-restuarent-delivery-details">
+                        <p>10-20 Mins</p>
+                        <p class="align-end">$2.99 Delivery Fee</p>
+                    </div>
+                </div>
+                <div class="all-restuarent">
+                    <img src="images/tasty-shawarma.avif" alt="">
+                    <div class="all-restuarent-name">
+                        <p class="all-restuarent-tile">Tasty Shawarma</p>
+                        <i class="fa-regular fa-heart fa-lg" style="color:red;"></i>
+                        <div class="all-restuarent-icons">
+                            <div class="rating-flex">
+                                <p>4.3</p>
+                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-restuarent-delivery-details">
+                        <p>10-20 Mins</p>
+                        <p class="align-end">$2.99 Delivery Fee</p>
+                    </div>
+                </div>
+            </div>
+            <div class="show-more-button">
+                <a href="index.html">Show More</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-container">
+                <div class="footer-logo">
+                    <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick Bites</a>
+                </div>
+            </div>
+            <div class="quick-links-container">
+                <div class="quick-link">
+                    <p>Get Help</p>
+                    <p>About Us</p>
+                    <p>Promotions</p>
+                </div>
+                <div class="quick-link">
+                    <p>Get Help</p>
+                    <p>About Us</p>
+                    <p>Promotions</p>
+                </div>
+            </div>
+            <div class="store-icons-container align-end">
+                <div class="store-icons">
+                    <img src="images/app-store.png" alt="">
+                    <p>Apple Store</p>
+                </div>
+                <div class="store-icons">
+                    <img src="images/game.png" alt="">
+                    <p>Google Play</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/cc4aa76a9b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Summary</title>
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <header>
+        <nav>
+            <div id="sidebar">
+                <a id="closebtn">&times;</a>
+                <div class="sidenav-links">
+                    <div class="nav-item">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <a href="order.html">Order History</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html">Cart</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="index.html">Account</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-container">
+                <i id="openSidebarBtn" class="fa-solid fa-bars fa-xl"></i>
+                <div class="menu-nav-item">
+                    <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick Bites</a>
+                </div>
+                <div class="location-menu-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="index.html">108 University Ave</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="search-nav-item">
+                    <input type="text" placeholder="Type the bite you are want!">
+                    <a href="index.html" id="searchButton">Search</a>
+                </div>
+                <div class="cart-nav-item">
+                    <a href="cart.html"> <i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-heading">
+            <h1>Cart Summary</h1>
+            <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+        </div>
+        <div class="cart-summary-container">
+            <div class="cart-items-container">
+                <div class="cart-item">
+                    <img src="images/subway-item-1.avif" alt="">
+                    <div>
+                        <h3>Italian B.M.T.</h3>
+                        <p>$6.99</p>
+                    </div>
+                    <div class="quantity-container">
+                        <i class="fa-solid fa-trash fa-lg"></i>
+                        <p>1</p>
+                        <button id="add-item-button">+</button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="images/subway-item-1.avif" alt="">
+                    <div>
+                        <h3>Italian B.M.T.</h3>
+                        <p>$6.99</p>
+                    </div>
+                    <div class="quantity-container">
+                        <i class="fa-solid fa-trash fa-lg"></i>
+                        <p>1</p>
+                        <button id="add-item-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-checkout-summary">
+                <div class="order-totals">
+                    <div class="main-heading">
+                        <h3>Order Totals</h3>
+                    </div>
+                    <div>
+                        <div class="flex-2">
+                            <p>Subtotal</p>
+                            <p>$23.76</p>
+                        </div>
+                        <div class="flex-2">
+                            <p>Delivery Fee</p>
+                            <p>$1.49</p>
+                        </div>
+                        <div class="flex-2">
+                            <p>Taxes & Other Fees</p>
+                            <p>$5.48</p>
+                        </div>
+                        <hr>
+                        <div class="flex-2">
+                            <p>Total</p>
+                            <p>$30.89</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Payment-container">
+                    <div class="main-heading">
+                        <h3>Payment</h3>
+                    </div>
+                    <div class="card-container">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <p>xxxx-xxxx-xxxx-8765</p>
+                    </div>
+                    <div class="card-container">
+                        <i class="fa-brands fa-cc-apple-pay"></i>
+                        <p>xxxx-xxxx-xxxx-8765</p>
+                    </div>
+                    <div class="card-container">
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <p>xxxx-xxxx-xxxx-8765</p>
+                    </div>
+                </div>
+                <div>
+                    <button>Place Order</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-container">
+                <div class="footer-logo">
+                    <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick Bites</a>
+                </div>
+            </div>
+            <div class="quick-links-container">
+                <div class="quick-link">
+                    <p>Get Help</p>
+                    <p>About Us</p>
+                    <p>Promotions</p>
+                </div>
+                <div class="quick-link">
+                    <p>Get Help</p>
+                    <p>About Us</p>
+                    <p>Promotions</p>
+                </div>
+            </div>
+            <div class="store-icons-container align-end">
+                <div class="store-icons">
+                    <img src="images/app-store.png" alt="">
+                    <p>Apple Store</p>
+                </div>
+                <div class="store-icons">
+                    <img src="images/game.png" alt="">
+                    <p>Google Play</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/cc4aa76a9b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

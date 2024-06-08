@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restuarents</title>
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="restuarent.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <header>
+        <nav>
+            <div id="sidebar">
+                <a id="closebtn">&times;</a>
+                <div class="sidenav-links">
+                    <div class="nav-item">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <a href="order.html">Order History</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html">Cart</a>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="index.html">Account</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-container">
+                <i id="openSidebarBtn" class="fa-solid fa-bars fa-xl"></i>
+                <div class="menu-nav-item">
+                    <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick Bites</a>
+                </div>
+                <div class="location-menu-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="index.html">108 University Ave</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="search-nav-item">
+                    <input type="text" placeholder="Type the bite you are want!">
+                    <a href="index.html" id="searchButton">Search</a>
+                </div>
+                <div class="cart-nav-item">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-banner">
+            <img src="images/subway-banner.avif" alt="">
+        </div>
+        <div class="restuarent-logo-search">
+            <div class="restuarent-logo">
+                <img src="images/Subway_Canada_logo.avif" alt="">
+                <h1>Subway</h1>
+                <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
+            </div>
+            <div class="restuarent-search">
+                <input type="text" placeholder="Type the bite you are want!">
+                <a href="index.html" id="searchButton">Search</a>
+            </div>
+        </div>
+        <div class="restuarent-details-container">
+            <div class="restuarent-info">
+                <h2>Store Info</h2>
+                <div class="rating-flex">
+                    <p>4.3</p>
+                    <i class="fa-solid fa-star" style="color: #E6B325;"></i>
+                    <p>(500+) ratings</p>
+                </div>
+                <div class="delivery-details">
+                    <p>10-20 Mins</p>
+                    <p>$2.99 Delivery Fee</p>
+                </div>
+            </div>
+            <div class="filter-options-container">
+                <div class="filter-option">
+                    <i class="fa-solid fa-tag"></i>
+                    <p>Offers</p>
+                </div>
+                <div class="filter-option">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Rating</p>
+                </div>
+                <div class="filter-option">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p>Price</p>
+                </div>
+                <div class="filter-option">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Time</p>
+                </div>
+                <div class="filter-option">
+                    <i class="fa-solid fa-tag"></i>
+                    <p>Sort</p>
+                </div>
+            </div>
+        </div>
+        <div class="restuarent-menu-items-container">
+            <div class="restuarent-menu">
+                <h2>Menu</h2>
+                <div>
+                    <p>Featured Items</p>
+                    <p>Offers</p>
+                    <p>Combos</p>
+                    <p>Drinks</p>
+                </div>
+            </div>
+            <div class="restuarent-menu-grid">
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-1.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Italian B.M.T.</h3>
+                            <button id="add-item-button">+</button>
+                        </div>
+                        <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-1.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Italian B.M.T.</h3>
+                            <button id="add-item-button">+</button>
+                        </div>
+                        <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-1.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Italian B.M.T.</h3>
+                            <button id="add-item-button">+</button>
+                        </div>
+                        <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-1.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Italian B.M.T.</h3>
+                            <button id="add-item-button">+</button>
+                        </div>
+                        <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-1.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Italian B.M.T.</h3>
+                            <button id="add-item-button">+</button>
+                        </div>
+                        <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="restuarent-menu-grid-item">
+                    <img src="images/subway-item-1.avif" alt="">
+                    <div class="restuarent-menu-grid-item-text">
+                        <div class="restuarent-item-name">
+                            <h3>Italian B.M.T.</h3>
+                            <button id="add-item-button">+</button>
+                        </div>
+                        <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-container">
+                <div class="footer-logo">
+                    <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick Bites</a>
+                </div>
+            </div>
+            <div class="quick-links-container">
+                <div class="quick-link">
+                    <p>Get Help</p>
+                    <p>About Us</p>
+                    <p>Promotions</p>
+                </div>
+                <div class="quick-link">
+                    <p>Get Help</p>
+                    <p>About Us</p>
+                    <p>Promotions</p>
+                </div>
+            </div>
+            <div class="store-icons-container align-end">
+                <div class="store-icons">
+                    <img src="images/app-store.png" alt="">
+                    <p>Apple Store</p>
+                </div>
+                <div class="store-icons">
+                    <img src="images/game.png" alt="">
+                    <p>Google Play</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/cc4aa76a9b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
