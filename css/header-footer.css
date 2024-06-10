@@ -128,7 +128,7 @@ input[type='text'] {
 
 input[type='text']:focus {
   outline: #1c6cb3;
-  border: 2px solid #1c6cb3;
+  border: 1px solid #1c6cb3;
 }
 
 .footer-container {

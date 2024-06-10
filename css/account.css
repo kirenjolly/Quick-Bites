@@ -1,0 +1,110 @@
+.account-container {
+    width: 55%;
+    margin: 40px auto;
+    border: 1px solid gray;
+    padding: 40px 0;
+    border-radius: 5px;
+    box-shadow: 2px 5px 8px #888888;
+}
+
+.account-container h1,  .change-pass-container h1{
+    text-align: center;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile-section img {
+    width: 64px;
+    height: 64px;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input[type='text'],  input[type='email'], input[type='password']{
+    padding: 8px 250px 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color:#F3F3F3;;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+}
+
+input[type='text']:focus, input[type='email']:focus, input[type='password']:focus {
+    outline: #1c6cb3;
+    border: 1px solid #1c6cb3;
+}
+
+
+.formButton {
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    width: 70%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+}
+
+.formButton:hover {
+    background-color: red;
+    color: black;
+}
+
+.change-pass-container {
+    width: 55%;
+    margin: 40px auto;
+    border: 1px solid gray;
+    padding: 40px 0;
+    border-radius: 5px;
+    box-shadow: 2px 5px 8px #888888;
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.password-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.password-section img {
+    width: 64px;
+    height: 64px;
+}
+
+/* */
+.flex-2-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+::placeholder {
+    overflow: visible;
+  }
+/*  */

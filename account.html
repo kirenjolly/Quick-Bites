@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
-    <link rel="stylesheet" href="header-footer.css">
-    <link rel="stylesheet" href="account.csss">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico.svg">
 </head>
+
 <body>
     <header>
         <nav>
@@ -27,7 +30,7 @@
                     </div>
                     <div class="nav-item">
                         <i class="fa-solid fa-user"></i>
-                        <a href="index.html">Account</a>
+                        <a href="account.html">Account</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +56,55 @@
         </nav>
     </header>
     <main>
+        <div class="account-container">
+            <h1>Account Information</h1>
+            <div class="profile-section">
+                <img src="images/profile-icon.png" alt="">
+                <div>
+                    <form action="account.html" class="profile-form">
+                        <div class="flex-2-column">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" value="John Doe">
+                        </div>
+                        <div class="flex-2-column">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" value="johndoe@gmail.com">
+                        </div>
+                        <div class="flex-2-column">
+                            <label for="cell">Phone Number</label>
+                            <input type="text" id="cell" placeholder="Enter your phone number" value="(548)333-6148">
+                        </div>
+                        <input type="submit" value="Save" id="accountSaveButton" class="formButton">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="change-pass-container">
+            <h1>Change Password</h1>
+            <div>
+                <div class="password-section">
+                    <img src="images/padlock.png" alt="">
+                    <form action="" class="password-form">
+                        <div class="flex-2-column">
+                            <label for="cpass">Current Password</label>
+                            <input type="password" id="cpass" placeholder="Enter your current password">
+                        </div>
+                        <div class="flex-2-column">
+                            <label for="npass">New Password</label>
+                            <input type="password" id="npass" placeholder="Enter your new password">
+                        </div>
+                        <div class="flex-2-column">
+                            <label for="rnpass">Re-Enter New Password</label>
+                            <input type="password" id="rnpass" placeholder="Re-Enter your new password">
+                        </div>
+                        <input type="submit" value="Save" id="passwordSaveButton" class="formButton">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
 
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -86,7 +137,8 @@
             </div>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
     <script src="https://kit.fontawesome.com/cc4aa76a9b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
