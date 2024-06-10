@@ -30,7 +30,7 @@
                     </div>
                     <div class="nav-item">
                         <i class="fa-solid fa-user"></i>
-                        <a href="index.html">Account</a>
+                        <a href="account.html">Account</a>
                     </div>
                 </div>
             </div>
@@ -61,76 +61,130 @@
             <!-- <i class="fa-solid fa-cart-shopping"></i> -->
         </div>
         <div class="cart-summary-container">
-            <div class="cart-items-container">
-                <div class="cart-item">
-                    <img src="images/subway-item-1.avif" alt="">
-                    <div>
-                        <h3>Italian B.M.T.</h3>
-                        <p>$6.99</p>
+            <div class="cart-with-shipping">
+                <div class="cart-items-container">
+                    <div class="cart-item">
+                        <img src="images/subway-item-1.avif" alt="">
+                        <div>
+                            <h3>Italian B.M.T.</h3>
+                            <p>$6.99</p>
+                        </div>
+                        <div class="quantity-container">
+                            <i class="fa-solid fa-trash "></i>
+                            <p>1x</p>
+                            <button id="add-item-button">+</button>
+                        </div>
                     </div>
-                    <div class="quantity-container">
-                        <i class="fa-solid fa-trash fa-lg"></i>
-                        <p>1</p>
-                        <button id="add-item-button">+</button>
+                    <div class="cart-item">
+                        <img src="images/subway-item-1.avif" alt="">
+                        <div>
+                            <h3>Italian B.M.T.</h3>
+                            <p>$6.99</p>
+                        </div>
+                        <div class="quantity-container">
+                            <i class="fa-solid fa-trash"></i>
+                            <p>1x</p>
+                            <button id="add-item-button">+</button>
+                        </div>
                     </div>
                 </div>
-                <div class="cart-item">
-                    <img src="images/subway-item-1.avif" alt="">
-                    <div>
-                        <h3>Italian B.M.T.</h3>
-                        <p>$6.99</p>
-                    </div>
-                    <div class="quantity-container">
-                        <i class="fa-solid fa-trash fa-lg"></i>
-                        <p>1</p>
-                        <button id="add-item-button">+</button>
+                <div class="shipping-address-container">
+                    <h1>Shipping Address</h1>
+                    <div class="delivery-details-container">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.0987953372305!2d-80.5205891886473!3d43.47940856353398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf31d0cec9491%3A0x8bf5f60c306d2207!2sConestoga%20College%20Waterloo%20Campus!5e0!3m2!1sen!2sca!4v1717990070264!5m2!1sen!2sca"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="delivery-details">
+                            <div class="delivery-address-container">
+                                <i class="fa-solid fa-house fa-lg"></i>
+                                <div>
+                                    <h4>108 University Ave</h4>
+                                    <p class="reg-txt">Waterloo, ON, N2L 2R7, Canada</p>
+                                </div>
+                                <div class="flex-2 align-flex-end edit-icon-flex">
+                                    <i class="fa-solid fa-pen fa-xs"></i>
+                                    <p class="bold-txt-sm">Edit</p>
+                                </div>
+                            </div>
+                            <div class="delivery-address-container">
+                                <i class="fa-solid fa-truck fa-lg"></i>
+                                <div>
+                                    <h4>Drop at my door</h4>
+                                    <p class="reg-txt">Add delivery instruction</p>
+                                </div>
+                                <div class="flex-2 align-flex-end edit-icon-flex">
+                                    <i class="fa-solid fa-pen fa-xs"></i>
+                                    <p class="bold-txt-sm">Edit</p>
+                                </div>
+                            </div>
+                            <div class="delivery-address-container">
+                                <i class="fa-solid fa-phone fa-lg"></i>
+                                <div>
+                                    <h4>(548)333-6148</h4>
+                                </div>
+                                <div class="flex-2 align-flex-end edit-icon-flex">
+                                    <i class="fa-solid fa-pen fa-xs"></i>
+                                    <p class="bold-txt-sm">Edit</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="order-checkout-summary">
+                <div class="restuarent-name-logo-flex">
+                    <img src="images/Subway_Canada_logo.avif" alt="">
+                    <div>
+                        <h2>Subway</h2>
+                        <p>108 University Ave</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
                 <div class="order-totals">
-                    <div class="main-heading">
+                    <div class="bold-txt-md">
                         <h3>Order Totals</h3>
                     </div>
-                    <div>
+                    <div class="order-total-details-flex">
                         <div class="flex-2">
                             <p>Subtotal</p>
-                            <p>$23.76</p>
+                            <p class="align-end">$23.76</p>
                         </div>
                         <div class="flex-2">
                             <p>Delivery Fee</p>
-                            <p>$1.49</p>
+                            <p class="align-end">$1.49</p>
                         </div>
                         <div class="flex-2">
                             <p>Taxes & Other Fees</p>
-                            <p>$5.48</p>
+                            <p class="align-end">$5.48</p>
                         </div>
                         <hr>
                         <div class="flex-2">
                             <p>Total</p>
-                            <p>$30.89</p>
+                            <p class="align-end">$30.89</p>
                         </div>
                     </div>
                 </div>
                 <div class="Payment-container">
                     <div class="main-heading">
-                        <h3>Payment</h3>
+                        <h3>Payment Instruction</h3>
                     </div>
                     <div class="card-container">
-                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-visa fa-xl" style="color: #2a7dea;"></i>
                         <p>xxxx-xxxx-xxxx-8765</p>
                     </div>
                     <div class="card-container">
-                        <i class="fa-brands fa-cc-apple-pay"></i>
+                        <i class="fa-brands fa-cc-apple-pay fa-xl"></i>
                         <p>xxxx-xxxx-xxxx-8765</p>
                     </div>
                     <div class="card-container">
-                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-paypal fa-xl" style="color: #2a7dea;"></i>
                         <p>xxxx-xxxx-xxxx-8765</p>
                     </div>
                 </div>
                 <div>
-                    <button>Place Order</button>
+                    <button id="place-order-button">Place Order</button>
                 </div>
             </div>
         </div>

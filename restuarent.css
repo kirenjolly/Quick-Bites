@@ -113,9 +113,23 @@ p {
     color: white;
 }
 
+.restuarent-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.restuarent-menu-names {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .restuarent-menu-items-container {
     display: flex;
     gap: 100px;
+    margin-top: 20px;
+    /* min-width: fit-content; */
 }
 
 .restuarent-menu-grid {
