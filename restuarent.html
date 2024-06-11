@@ -15,23 +15,51 @@
     <header>
         <nav>
             <div id="sidebar">
-                <a id="closebtn">&times;</a>
-                <div class="sidenav-links">
-                    <div class="nav-item">
-                        <i class="fa-solid fa-house"></i>
-                        <a href="index.html">Home</a>
+                <a id="closebtn"><i class="fa-solid fa-circle-xmark fa-2xl"></i></a>
+                <div class="sidenav-container">
+                    <div class="account-nav-container">
+                        <img src="images/profile-icon.png" alt="">
+                        <div class="flex-2-column">
+                            <p class="bold-txt-md">John Doe</p>
+                            <a href="account.html">Edit Account</a>
+                        </div>
                     </div>
-                    <div class="nav-item">
-                        <i class="fa-solid fa-clock-rotate-left"></i>
-                        <a href="order.html">Order History</a>
+                    <div class="sidenav-links">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <a href="index.html">Home</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <a href="order.html">Order History</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a href="cart.html">Cart</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="account.html">Account</a>
+                        </div>
                     </div>
-                    <div class="nav-item">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="cart.html">Cart</a>
+                    <div>
+                        <button id="signOutButton">Sign Out</button>
                     </div>
-                    <div class="nav-item">
-                        <i class="fa-solid fa-user"></i>
-                        <a href="account.html">Account</a>
+                    <div class="nav-logo-store-flex">
+                        <div class="nav-logo-container">
+                            <a href="index.html"> <i class="fa-solid fa-cookie-bite" style="color: brown;"></i> Quick
+                                Bites</a>
+                        </div>
+                        <div class="nav-store-container">
+                            <div class="nav-store-icons">
+                                <i class="fa-brands fa-apple"></i>
+                                <p>Apple</p>
+                            </div>
+                            <div class="nav-store-icons">
+                                <i class="fa-brands fa-android"></i>
+                                <p>Android</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

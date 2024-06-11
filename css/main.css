@@ -38,8 +38,8 @@ p {
   left: 0;
   width: 250px;
   height: 100%;
-  background: #333;
-  color: #fff;
+  background: white;
+  color: black;
   padding: 15px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   z-index: 2;
@@ -52,22 +52,42 @@ p {
   position: absolute;
   top: 10px;
   right: 25px;
-  font-size: 36px;
+  /* font-size: 36px; */
   margin-left: 50px;
   cursor: pointer;
+  color: black;
+}
+
+.sidenav-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  gap: 35px;
+  height: 100%;
+  align-items: center;
+}
+
+.account-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account-nav-container img {
+  width: 64px;
+  height: 64px;
 }
 
 .sidenav-links {
   display: flex;
-  padding-top: 60px;
   flex-direction: column;
-  gap: 20px;
-  margin-left: 20px;
+  gap: 30px;
 }
 
 .sidenav-links a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.1rem;
 }
 
@@ -79,6 +99,10 @@ p {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+.nav-item a {
+  font-size: 1.3rem;
 }
 
 .sidebar-container {
@@ -98,6 +122,58 @@ p {
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
+}
+
+#signOutButton {
+  color: white;
+  padding: 5px 40px;
+  border-radius: 20px;
+  background-color: black;
+  border: none;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+#signOutButton:hover {
+  background-color: red;
+  color: white;
+}
+
+.nav-logo-store-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  gap: 10px;
+}
+
+.nav-logo-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+.nav-store-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 20px;
+}
+
+.nav-store-icons {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  /* background-color: #EFECEC; */
+  background-color: #D8D9DA;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .cart-nav-item {
@@ -301,7 +377,7 @@ input[type='text']:focus {
   flex-direction: column;
   gap: 10px;
   /* make flex items equal */
-  
+
   /* flex: 1 1 0;
   width: 0; */
 }
@@ -318,7 +394,7 @@ input[type='text']:focus {
   margin-left: auto;
 }
 
-i.fa-lg {
+i.fa-lg, i.fa-2xl{
   line-height: inherit;
 }
 
@@ -436,4 +512,27 @@ i.fa-lg {
   flex-direction: column;
   gap: 10px;
   color: white;
+}
+
+
+/* Common */
+
+.flex-2-column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bold-txt-sm {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.bold-txt-md {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
 }
