@@ -79,10 +79,11 @@ main {
 }
 
 .cart-item {
-    display: flex;
-    gap: 60px;
+    gap: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
     align-items: center;
-    width: 80%;
 }
 
 .cart-item img {

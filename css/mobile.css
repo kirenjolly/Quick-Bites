@@ -110,15 +110,8 @@
         margin-top: 40px;
     }
 
-
-    .cart-item {
-        display: flex;
-        gap: 40px;
-        align-items: center;
-    }
-
-    .cart-item img {
-        height: 90px;
+    .cart-summary-container {
+       margin: 20px;
     }
 
     /* Orders */
