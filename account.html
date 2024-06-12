@@ -7,10 +7,12 @@
     <title>Account</title>
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico.svg">
 </head>
 
 <body>
+    <div id="overlay"></div>
     <header>
         <nav>
             <div id="sidebar">
@@ -25,7 +27,7 @@
                     </div>
                     <div class="sidenav-links">
                         <div class="nav-item">
-                            <i class="fa-solid fa-house"></i>
+                            <i class="fa-solid fa-landmark"></i>
                             <a href="index.html">Home</a>
                         </div>
                         <div class="nav-item">
@@ -39,6 +41,14 @@
                         <div class="nav-item">
                             <i class="fa-solid fa-user"></i>
                             <a href="account.html">Account</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <a href="about.html">About Us</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="contact.html">Contact</a>
                         </div>
                     </div>
                     <div>
@@ -73,12 +83,13 @@
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="search-nav-item">
-                    <input type="text" placeholder="Type the bite you are want!">
+                    <input type="text" placeholder="&#xF002; Type the bite you are want!"
+                        style="font-family:Arial, FontAwesome" id="headerSearchInput" />
                     <a href="index.html" id="searchButton">Search</a>
                 </div>
                 <div class="cart-nav-item">
-                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
-                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                    <i class="fa-solid fa-heart fa-lg" style="color: red;"></i>
                 </div>
             </div>
         </nav>
@@ -92,15 +103,15 @@
                     <form action="account.html" class="profile-form">
                         <div class="flex-2-column">
                             <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Enter your name" value="John Doe">
+                            <input type="text" id="accountNameInput" placeholder="Enter your name" value="John Doe">
                         </div>
                         <div class="flex-2-column">
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Enter your email" value="johndoe@gmail.com">
+                            <input type="email" id="accountEmailInput" placeholder="Enter your email" value="johndoe@gmail.com">
                         </div>
                         <div class="flex-2-column">
                             <label for="cell">Phone Number</label>
-                            <input type="text" id="cell" placeholder="Enter your phone number" value="(548)333-6148">
+                            <input type="text" id="accountCellInput" placeholder="Enter your phone number" value="(548)333-6148">
                         </div>
                         <input type="submit" value="Save" id="accountSaveButton" class="formButton">
                     </form>
@@ -115,15 +126,15 @@
                     <form action="" class="password-form">
                         <div class="flex-2-column">
                             <label for="cpass">Current Password</label>
-                            <input type="password" id="cpass" placeholder="Enter your current password">
+                            <input type="password" id="cpass" placeholder="Enter your current password" class="pass">
                         </div>
                         <div class="flex-2-column">
                             <label for="npass">New Password</label>
-                            <input type="password" id="npass" placeholder="Enter your new password">
+                            <input type="password" id="npass" placeholder="Enter your new password" class="pass">
                         </div>
                         <div class="flex-2-column">
                             <label for="rnpass">Re-Enter New Password</label>
-                            <input type="password" id="rnpass" placeholder="Re-Enter your new password">
+                            <input type="password" id="rnpass" placeholder="Re-Enter your new password" class="pass">
                         </div>
                         <input type="submit" value="Save" id="passwordSaveButton" class="formButton">
                     </form>
@@ -153,7 +164,7 @@
                     <p>Promotions</p>
                 </div>
             </div>
-            <div class="store-icons-container align-end">
+            <div class="store-icons-container">
                 <div class="store-icons">
                     <img src="images/app-store.png" alt="">
                     <p>Apple Store</p>

@@ -1,3 +1,7 @@
+main {
+    padding-top: 80px;
+}
+
 .account-container {
     width: 55%;
     margin: 40px auto;
@@ -7,7 +11,8 @@
     box-shadow: 2px 5px 8px #888888;
 }
 
-.account-container h1,  .change-pass-container h1{
+.account-container h1,
+.change-pass-container h1 {
     text-align: center;
 }
 
@@ -34,18 +39,24 @@ label {
     font-size: 1.1rem;
 }
 
-input[type='text'],  input[type='email'], input[type='password']{
-    padding: 8px 250px 8px 15px;
+#accountNameInput,
+#accountEmailInput,
+#accountCellInput,
+.pass {
+    padding: 0.5rem 14rem 0.5rem  1rem;
     border-radius: 5px;
     border: none;
-    background-color:#F3F3F3;;
+    background-color: #F3F3F3;
     color: black;
     font-size: 1rem;
     font-weight: 600;
     font-family: "Dosis", sans-serif;
 }
 
-input[type='text']:focus, input[type='email']:focus, input[type='password']:focus {
+#accountNameInput:focus,
+#accountEmailInput:focus,
+#accountCellInput:focus,
+.pass:focus {
     outline: #1c6cb3;
     border: 1px solid #1c6cb3;
 }
@@ -106,5 +117,6 @@ input[type='text']:focus, input[type='email']:focus, input[type='password']:focu
 
 ::placeholder {
     overflow: visible;
-  }
+}
+
 /*  */

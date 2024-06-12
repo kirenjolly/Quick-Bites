@@ -7,6 +7,7 @@
     <title>Cart Summary</title>
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico.svg">
 </head>
 
@@ -26,7 +27,7 @@
                     </div>
                     <div class="sidenav-links">
                         <div class="nav-item">
-                            <i class="fa-solid fa-house"></i>
+                            <i class="fa-solid fa-landmark"></i>
                             <a href="index.html">Home</a>
                         </div>
                         <div class="nav-item">
@@ -40,6 +41,14 @@
                         <div class="nav-item">
                             <i class="fa-solid fa-user"></i>
                             <a href="account.html">Account</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <a href="about.html">About Us</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="contact.html">Contact</a>
                         </div>
                     </div>
                     <div>
@@ -74,46 +83,46 @@
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="search-nav-item">
-                    <input type="text" placeholder="Type the bite you are want!">
+                    <input type="text" placeholder="&#xF002; Type the bite you are want!"
+                        style="font-family:Arial, FontAwesome" id="headerSearchInput" />
                     <a href="index.html" id="searchButton">Search</a>
                 </div>
                 <div class="cart-nav-item">
-                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
-                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                    <i class="fa-solid fa-heart fa-lg" style="color: red;"></i>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="main-heading">
-            <h1>Cart Summary</h1>
-            <!-- <i class="fa-solid fa-cart-shopping"></i> -->
-        </div>
         <div class="cart-summary-container">
             <div class="cart-with-shipping">
-                <div class="cart-items-container">
-                    <div class="cart-item">
-                        <img src="images/subway-item-1.avif" alt="">
-                        <div>
-                            <h3>Italian B.M.T.</h3>
-                            <p>$6.99</p>
+                <div class="cart-items-section">
+                    <h1>Cart Summary</h1>
+                    <div class="cart-items-container">
+                        <div class="cart-item">
+                            <img src="images/subway-item-1.avif" alt="">
+                            <div>
+                                <h3>Italian B.M.T.</h3>
+                                <p>$6.99</p>
+                            </div>
+                            <div class="quantity-container">
+                                <i class="fa-solid fa-trash "></i>
+                                <p>1x</p>
+                                <button id="add-item-button">+</button>
+                            </div>
                         </div>
-                        <div class="quantity-container">
-                            <i class="fa-solid fa-trash "></i>
-                            <p>1x</p>
-                            <button id="add-item-button">+</button>
-                        </div>
-                    </div>
-                    <div class="cart-item">
-                        <img src="images/subway-item-1.avif" alt="">
-                        <div>
-                            <h3>Italian B.M.T.</h3>
-                            <p>$6.99</p>
-                        </div>
-                        <div class="quantity-container">
-                            <i class="fa-solid fa-trash"></i>
-                            <p>1x</p>
-                            <button id="add-item-button">+</button>
+                        <div class="cart-item">
+                            <img src="images/subway-item-1.avif" alt="">
+                            <div>
+                                <h3>Italian B.M.T.</h3>
+                                <p>$6.99</p>
+                            </div>
+                            <div class="quantity-container">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>1x</p>
+                                <button id="add-item-button">+</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,7 +205,7 @@
                     </div>
                 </div>
                 <div class="Payment-container">
-                    <div class="main-heading">
+                    <div class="bold-txt-md">
                         <h3>Payment Instruction</h3>
                     </div>
                     <div class="card-container">
@@ -213,7 +222,7 @@
                     </div>
                 </div>
                 <div>
-                    <button id="place-order-button">Place Order</button>
+                    <a href="index.html"> <button id="place-order-button">Place Order</button></a>
                 </div>
             </div>
         </div>
@@ -237,7 +246,7 @@
                     <p>Promotions</p>
                 </div>
             </div>
-            <div class="store-icons-container align-end">
+            <div class="store-icons-container">
                 <div class="store-icons">
                     <img src="images/app-store.png" alt="">
                     <p>Apple Store</p>

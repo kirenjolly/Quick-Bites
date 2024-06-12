@@ -1,0 +1,104 @@
+/* Contact Us Page Styles */
+
+main {
+    padding-top: 80px;
+}
+
+.contact-us-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: transparent 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.2) 0px 2px 8px;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: transparent 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.2) 0px 2px 8px;
+}
+
+.contact-info h1,
+.contact-form h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contact-info p,
+.contact-form p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contact-info p.note {
+    font-style: italic;
+    color: black;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 250px 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F3F3F3;
+    ;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: #1c6cb3;
+    border: 1px solid #1c6cb3;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    width: 70%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+    align-items: center;
+}
+
+button[type="submit"]:hover {
+    background-color: red;
+    color: black;
+}

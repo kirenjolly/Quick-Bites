@@ -1,0 +1,53 @@
+/* About Us Page Styles */
+main {
+    padding-top: 80px;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: transparent 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.2) 0px 2px 8px;
+    text-align: left;
+}
+
+.about-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: black;
+}
+
+.about-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 1.6;
+}
+
+.about-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: black;
+}
+
+.about-container ul li {
+    margin-bottom: 10px;
+}
+
+.about-container a {
+    color: #1c6cb3;
+    text-decoration: none;
+}
+
+.about-container a:hover {
+    text-decoration: underline;
+}

@@ -1,3 +1,7 @@
+main {
+    padding-top: 80px;
+  }
+
 .dot {
     height: 5px;
     width: 5px;
@@ -24,21 +28,17 @@ h2, p {
     margin: 0;
 }
 
-/*  */
-.main-heading {
-    font-size: 1.3rem;
-}
-
 .order-completed-container {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    align-items: center;
 }
 
 .order {
     display: flex;
     gap: 50px;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     padding-bottom: 10px;
 }
 

@@ -7,10 +7,30 @@
     <title>Restuarents</title>
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/restuarent.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="js/app.js"></script>
 </head>
 
 <body>
+    <div class="popup" id="popup">
+        <div class="popup-container">
+            <h1>Item Added to Cart</h1>
+            <img src="images/subway-item-1.avif" alt="">
+            <h3>Italian B.M.T.</h3>
+            <div class="popupLinks">
+                <div class="popupLinksIcons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="cart.html">Go to Cart</a>
+                </div>
+                <div class="popupLinksIcons">
+                    <i class="fa-solid fa-xmark"></i>
+                    <a href="#" id="closeLink">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="overlay"></div>
     <header>
         <nav>
@@ -26,7 +46,7 @@
                     </div>
                     <div class="sidenav-links">
                         <div class="nav-item">
-                            <i class="fa-solid fa-house"></i>
+                            <i class="fa-solid fa-landmark"></i>
                             <a href="index.html">Home</a>
                         </div>
                         <div class="nav-item">
@@ -40,6 +60,14 @@
                         <div class="nav-item">
                             <i class="fa-solid fa-user"></i>
                             <a href="account.html">Account</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <a href="about.html">About Us</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="contact.html">Contact</a>
                         </div>
                     </div>
                     <div>
@@ -74,12 +102,13 @@
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="search-nav-item">
-                    <input type="text" placeholder="Type the bite you are want!">
+                    <input type="text" placeholder="&#xF002; Type the bite you are want!"
+                        style="font-family:Arial, FontAwesome" id="headerSearchInput" />
                     <a href="index.html" id="searchButton">Search</a>
                 </div>
                 <div class="cart-nav-item">
-                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
-                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                    <i class="fa-solid fa-heart fa-lg" style="color: red;"></i>
                 </div>
             </div>
         </nav>
@@ -95,8 +124,9 @@
                 <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
             </div>
             <div class="restuarent-search">
-                <input type="text" placeholder="Type the bite you are want!">
-                <a href="index.html" id="searchButton">Search</a>
+                <input type="text" placeholder="&#xF002; Search in the restuarent!"
+                    style="font-family:Arial, FontAwesome" id="restuarentSearchInput" />
+                <a href="index.html" id="restuarentSearchButton">Search</a>
             </div>
         </div>
         <div class="restuarent-details-container">
@@ -112,24 +142,24 @@
                     <p>$2.99 Delivery Fee</p>
                 </div>
             </div>
-            <div class="filter-options-container">
-                <div class="filter-option">
+            <div class="restuarent-filter-options-container">
+                <div class="restuarent-filter-option">
                     <i class="fa-solid fa-tag"></i>
                     <p>Offers</p>
                 </div>
-                <div class="filter-option">
+                <div class="restuarent-filter-option">
                     <i class="fa-solid fa-star"></i>
                     <p>Rating</p>
                 </div>
-                <div class="filter-option">
+                <div class="restuarent-filter-option">
                     <i class="fa-solid fa-dollar-sign"></i>
                     <p>Price</p>
                 </div>
-                <div class="filter-option">
+                <div class="restuarent-filter-option">
                     <i class="fa-regular fa-clock"></i>
                     <p>Time</p>
                 </div>
-                <div class="filter-option">
+                <div class="restuarent-filter-option">
                     <i class="fa-solid fa-tag"></i>
                     <p>Sort</p>
                 </div>
@@ -146,12 +176,25 @@
                 </div>
             </div>
             <div class="restuarent-menu-grid">
+                <div>
+                    <div class="restuarent-menu-grid-item">
+                        <img src="images/subway-item-1.avif" alt="">
+                        <div class="restuarent-menu-grid-item-text">
+                            <div class="restuarent-item-name">
+                                <h3>Italian B.M.T.</h3>
+                                <button class="add-item-button">+</button>
+                            </div>
+                            <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
+                            <p>$4.99</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="restuarent-menu-grid-item">
                     <img src="images/subway-item-1.avif" alt="">
                     <div class="restuarent-menu-grid-item-text">
                         <div class="restuarent-item-name">
                             <h3>Italian B.M.T.</h3>
-                            <button id="add-item-button">+</button>
+                            <button class="add-item-button">+</button>
                         </div>
                         <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
                         <p>$4.99</p>
@@ -162,7 +205,7 @@
                     <div class="restuarent-menu-grid-item-text">
                         <div class="restuarent-item-name">
                             <h3>Italian B.M.T.</h3>
-                            <button id="add-item-button">+</button>
+                            <button class="add-item-button">+</button>
                         </div>
                         <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
                         <p>$4.99</p>
@@ -173,7 +216,7 @@
                     <div class="restuarent-menu-grid-item-text">
                         <div class="restuarent-item-name">
                             <h3>Italian B.M.T.</h3>
-                            <button id="add-item-button">+</button>
+                            <button class="add-item-button">+</button>
                         </div>
                         <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
                         <p>$4.99</p>
@@ -184,7 +227,7 @@
                     <div class="restuarent-menu-grid-item-text">
                         <div class="restuarent-item-name">
                             <h3>Italian B.M.T.</h3>
-                            <button id="add-item-button">+</button>
+                            <button class="add-item-button">+</button>
                         </div>
                         <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
                         <p>$4.99</p>
@@ -195,18 +238,7 @@
                     <div class="restuarent-menu-grid-item-text">
                         <div class="restuarent-item-name">
                             <h3>Italian B.M.T.</h3>
-                            <button id="add-item-button">+</button>
-                        </div>
-                        <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
-                        <p>$4.99</p>
-                    </div>
-                </div>
-                <div class="restuarent-menu-grid-item">
-                    <img src="images/subway-item-1.avif" alt="">
-                    <div class="restuarent-menu-grid-item-text">
-                        <div class="restuarent-item-name">
-                            <h3>Italian B.M.T.</h3>
-                            <button id="add-item-button">+</button>
+                            <button class="add-item-button">+</button>
                         </div>
                         <p>Genoa salami, spicy pepperoni, and deli-style Black Forest ham made with pork</p>
                         <p>$4.99</p>
@@ -234,7 +266,7 @@
                     <p>Promotions</p>
                 </div>
             </div>
-            <div class="store-icons-container align-end">
+            <div class="store-icons-container">
                 <div class="store-icons">
                     <img src="images/app-store.png" alt="">
                     <p>Apple Store</p>
@@ -246,7 +278,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="js/app.js"></script> -->
     <script src="https://kit.fontawesome.com/cc4aa76a9b.js" crossorigin="anonymous"></script>
 </body>
 

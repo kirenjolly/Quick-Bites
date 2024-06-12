@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Bites</title>
+    <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico.svg">
 </head>
 
@@ -25,7 +28,7 @@
                     </div>
                     <div class="sidenav-links">
                         <div class="nav-item">
-                            <i class="fa-solid fa-house"></i>
+                            <i class="fa-solid fa-landmark"></i>
                             <a href="index.html">Home</a>
                         </div>
                         <div class="nav-item">
@@ -39,6 +42,14 @@
                         <div class="nav-item">
                             <i class="fa-solid fa-user"></i>
                             <a href="account.html">Account</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <a href="about.html">About Us</a>
+                        </div>
+                        <div class="nav-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="contact.html">Contact</a>
                         </div>
                     </div>
                     <div>
@@ -73,12 +84,13 @@
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="search-nav-item">
-                    <input type="text" placeholder="Type the bite you are want!">
+                    <input type="text" placeholder="&#xF002; Type the bite you are want!"
+                        style="font-family:Arial, FontAwesome" id="headerSearchInput" />
                     <a href="index.html" id="searchButton">Search</a>
                 </div>
                 <div class="cart-nav-item">
-                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
-                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                    <i class="fa-solid fa-heart fa-lg" style="color: red;"></i>
                 </div>
             </div>
         </nav>
@@ -212,7 +224,7 @@
                     </a>
                 </div>
                 <div class="link-features">
-                    <a href="index.html">
+                    <a href="restuarent.html">
                         <div class="link-features-restuarent">
                             <img src="images/feature-2.avif" alt="">
                             <div class="features-restuarent-name">
@@ -233,7 +245,7 @@
                     </a>
                 </div>
                 <div class="link-features">
-                    <a href="index.html">
+                    <a href="restuarent.html">
                         <div class="link-features-restuarent">
                             <img src="images/feature-3.avif" alt="">
                             <div class="features-restuarent-name">
@@ -253,57 +265,6 @@
                         </div>
                     </a>
                 </div>
-                <!-- <div class="features-restuarent">
-                    <img src="images/feature-1.avif" alt="">
-                    <div class="features-restuarent-name">
-                        <p class="features-restuarent-tile">Wendy's</p>
-                        <i class="fa-regular fa-heart fa-lg" style="color:red;"></i>
-                        <div class="features-restuarent-icons">
-                            <div class="rating-flex">
-                                <p>4.3</p>
-                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="features-restuarent-delivery-details">
-                        <p>10-20 Mins</p>
-                        <p class="align-end">$2.99 Delivery Fee</p>
-                    </div>
-                </div>
-                <div class="features-restuarent">
-                    <img src="images/feature-2.avif" alt="">
-                    <div class="features-restuarent-name">
-                        <p class="features-restuarent-tile">Nova Era Bakery</p>
-                        <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
-                        <div class="features-restuarent-icons">
-                            <div class="rating-flex">
-                                <p>4.4</p>
-                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="features-restuarent-delivery-details">
-                        <p>05-15 Mins</p>
-                        <p class="align-end">$2.99 Delivery Fee</p>
-                    </div>
-                </div>
-                <div class="features-restuarent">
-                    <img src="images/feature-3.avif" alt="">
-                    <div class="features-restuarent-name">
-                        <p class="features-restuarent-tile">Subway</p>
-                        <i class="fa-solid fa-heart fa-lg" style="color:red;"></i>
-                        <div class="features-restuarent-icons">
-                            <div class="rating-flex">
-                                <p>4.1</p>
-                                <i class="fa-solid fa-star" style="color: #E6B325;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="features-restuarent-delivery-details">
-                        <p>05-10 Mins</p>
-                        <p class="align-end">$0.99 Delivery Fee</p>
-                    </div>
-                </div> -->
             </div>
         </div>
         <div class="all-restuarents-section">
@@ -428,17 +389,21 @@
             </div>
             <div class="quick-links-container">
                 <div class="quick-link">
-                    <p>Get Help</p>
-                    <p>About Us</p>
-                    <p>Promotions</p>
+                    <a href="index.html">Home</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="order.html">Order History</a>
+                    <a href="account.html">Account</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="quick-link">
-                    <p>Get Help</p>
-                    <p>About Us</p>
-                    <p>Promotions</p>
+                    <a href="index.html">Help</a>
+                    <a href="index.html">Promotions</a>
+                    <a href="index.html">Privacy Policy</a>
+                    <a href="index.html">Terms & Conditions</a>
                 </div>
             </div>
-            <div class="store-icons-container align-end">
+            <div class="store-icons-container">
                 <div class="store-icons">
                     <img src="images/app-store.png" alt="">
                     <p>Apple Store</p>

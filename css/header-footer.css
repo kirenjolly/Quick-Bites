@@ -21,7 +21,7 @@
   height: 100%;
   background: white;
   color: black;
-  padding: 15px;
+  padding: 25px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   z-index: 2;
   transform: translateX(-100%);
@@ -37,13 +37,13 @@
   margin-left: 50px;
   cursor: pointer;
   color: black;
+  margin: 10px;
 }
 
 .sidenav-container {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  padding-bottom: 20px;
   gap: 35px;
   height: 100%;
   align-items: center;
@@ -102,7 +102,6 @@
 .sidebar-container a {
   text-decoration: none;
   color: black;
-  font-size: 1.1rem;
 }
 
 #signOutButton {
@@ -175,6 +174,7 @@ margin-left: auto !important; */
   align-self: center;
   margin: 0 auto !important;
   gap: 10px;
+  align-items: center;
 }
 
 .menu-nav-item a {
@@ -182,18 +182,22 @@ margin-left: auto !important; */
   font-size: 1.4rem;
 }
 
-input[type='text'] {
+#headerSearchInput {
   padding: 8px 200px 8px 20px;
-  border-radius: 20px;
-  border: 1px solid black;
+  border-radius: 5px;
+  border: none;
+  background-color: #F3F3F3;
   color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
 }
 
 
 #searchButton {
   color: white;
   padding: 4px 30px;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: black;
 }
 
@@ -202,16 +206,11 @@ input[type='text'] {
   color: white;
 }
 
-input[type='text']:focus {
-  outline: #1c6cb3;
-  border: 1px solid #1c6cb3;
-}
-
 .footer-container {
   display: flex;
   padding: 60px 40px 40px 40px;
   background-color: black;
-  gap: 100px;
+  justify-content: space-around;
   margin-top: 40px;
 }
 
@@ -219,6 +218,7 @@ input[type='text']:focus {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  justify-content: center;
 }
 
 .store-icons-container {
@@ -230,11 +230,12 @@ input[type='text']:focus {
 .store-icons {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .store-icons img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .footer-logo a {
@@ -255,6 +256,16 @@ input[type='text']:focus {
   gap: 10px;
   color: white;
 }
+
+.quick-link a {
+  color: white;
+  padding-left: 5px;
+}
+
+.quick-link a:hover {
+  border-left: 2px solid red;
+}
+
 
 
 /* common functions */
@@ -287,10 +298,48 @@ body {
   margin: 0;
 }
 
-main {
+/* main {
   padding: 80px 40px 10px 40px;
-}
+} */
 
 h2, p, h3, h4 {
   margin: 0;
+}
+
+::placeholder {
+  overflow: visible;
+}
+
+.flex-2 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.align-flex-end {
+  margin-left: auto;
+}
+
+.reg-txt {
+  font-weight: 500;
+}
+
+.bold-txt-sm {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.bold-txt-md {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.bold-txt-lg {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.reg-txt-md {
+  font-weight: 500;
+  font-size: 1.1rem;
 }

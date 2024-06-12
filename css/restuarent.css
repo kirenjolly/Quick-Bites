@@ -57,17 +57,107 @@ p {
     gap: 10px;
 }
 
-#searchButton {
+#restuarentSearchInput {
+    padding: 8px 200px 8px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F3F3F3;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+}
+
+#restuarentSearchButton {
     color: white;
-    padding: 4px 30px;
-    border-radius: 20px;
+    padding: 5px 30px;
+    border-radius: 5px;
     background-color: black;
 }
 
-#searchButton:hover {
+#restuarentSearchButton:hover {
     background-color: red;
     color: white;
 }
+
+/*  */
+.popup {
+    display: none;
+    position: fixed;
+    padding: 20px;
+    width: 30%;
+    left: 50%;
+    margin-left: -15%;
+    top: 40%;
+    margin-top: -10%;
+    /* height: 180px; */
+    z-index: 20;
+}
+
+#popup:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+}
+
+#popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 white, 0 1px 5px 0 white;
+    z-index: -1;
+}
+
+.popup-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popup-container img {
+    width: 80%;
+    height: 80%;
+}
+
+.popupLinks {
+    display: flex;
+    gap: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.popupLinksIcons {
+    background-color: #F3F3F3;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.popupLinksIcons:hover {
+    background-color: red;
+}
+
+.popupLinksIcons a {
+    color: black;
+}
+
+/*  */
 
 .restuarent-details-container {
     display: flex;
@@ -92,13 +182,13 @@ p {
     flex-direction: column;
 }
 
-.filter-options-container {
+.restuarent-filter-options-container {
     display: flex;
     margin: 0 50px;
     gap: 30px;
 }
 
-.filter-option {
+.restuarent-filter-option {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -108,7 +198,7 @@ p {
     border-radius: 20px;
 }
 
-.filter-option:hover {
+.restuarent-filter-option:hover {
     background-color: black;
     color: white;
 }
@@ -168,7 +258,7 @@ p {
     margin: 0;
 }
 
-#add-item-button {
+.add-item-button {
     display: inline-flex;
     min-height: 32px;
     border-radius: 100%;
@@ -185,7 +275,15 @@ p {
     margin-left: auto;
 }
 
-#add-item-button:hover {
+.add-item-button:hover {
     color: black;
     background-color: white;
+}
+
+::placeholder {
+    overflow: visible;
+}
+
+h1 {
+    margin: 0;
 }
