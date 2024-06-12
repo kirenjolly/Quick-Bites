@@ -149,6 +149,18 @@
         padding: 0.5rem 8rem 0.5rem 1rem;
     }
 
+    /* About */
+
+    .about-container {
+        margin: 40px 20px;
+    }
+
+    /* Contact */
+    .contact-us-container {
+        flex-direction: column;
+    }
+    
+
     /* Popup */
     .popup {
         width: 70%;

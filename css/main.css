@@ -220,6 +220,10 @@ i.fa-lg, i.fa-2xl{
   gap: 40px;
 }
 
+.all-restuarents-container a {
+  color: black;
+}
+
 .all-restuarent {
   display: flex;
   flex-direction: column;

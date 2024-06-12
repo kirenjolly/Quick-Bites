@@ -207,6 +207,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 50px;
 }
 
 .restuarent-menu-names {
@@ -225,7 +226,7 @@ p {
 .restuarent-menu-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 40px 60px;
+    gap: 40px 40px;
 }
 
 .restuarent-menu-grid img {

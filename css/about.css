@@ -24,6 +24,7 @@ main {
     font-size: 1.5em;
     margin-top: 20px;
     color: black;
+    text-align: center;
 }
 
 .about-container p {
